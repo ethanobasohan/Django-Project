@@ -1,0 +1,12 @@
+{% extends "fishstore/base.html" %}
+
+{% block title %}Exotic Fish Company - Catalog{% endblock %}
+
+{% block content %}
+    <h1>Fish Catalog</h1>
+    <ul>
+        <li><a href="{% url 'fish_detail' 'betta' %}">Betta Fish - $25.00</a></li>
+        <li><a href="{% url 'fish_detail' 'clownfish' %}">Clownfish - $30.00</a></li>
+        <li><a href="{% url 'fish_detail' 'angelfish' %}">Angelfish - $45.00</a></li>
+    </ul>
+{% endblock %}
